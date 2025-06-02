@@ -40,6 +40,20 @@ app.get("/todos", (req : Request, resp : Response)=>{
 
 } )
 
+//recibimos la data  
+app.get("/todos/:id", (req : Request, resp : Response) =>{
+    const id= req.params.id //requerimiento de parametros
+    const todo = {
+        id:id,
+        descripcion: "Bla bla bla"
+    }   
+    //y lo reeveniamos como ttodo
+    resp.json(todo)
+
+})
+
+
 app.listen(PORT, () => {
     console.log(`Se inicio servidor en puerto ${PORT}`)
 })
+

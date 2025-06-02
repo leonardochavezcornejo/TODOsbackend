@@ -1,4 +1,4 @@
-{
+{//tenemos que crear la carpeta dist y src y luego cambiarla en nodules
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
